@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg: #F7F5F0;
+    --color-card: #FFFFFF;
+    --color-text: #17191A;
+    --color-dark: #202426;
+    --color-dark-surface: #2A2F32;
+    --color-accent: #D97732;
+    --color-accent-light: #F0B27A;
+    --color-muted-green: #66705F;
+    --color-muted: #6B6D69;
+    --color-border: #DDD9D0;
+    --color-border-dark: #353B3E;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Warm Premium Utilities */
+.bg-warm {
+  background-color: #F7F5F0;
+}
+
+.bg-dark-graphite {
+  background-color: #202426;
+}
+
+.bg-dark-surface {
+  background-color: #2A2F32;
+}
+
+.bg-accent-orange {
+  background-color: #D97732;
+}
+
+.text-accent-orange {
+  color: #D97732;
+}
+
+.text-muted-olive {
+  color: #66705F;
+}
+
+.text-muted-editorial {
+  color: #6B6D69;
+}
+
+.border-warm {
+  border-color: #DDD9D0;
+}
+
+.border-dark-graphite {
+  border-color: #353B3E;
+}
+
+.font-heading {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Safe area support for modern mobile devices */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+/* Subtle Editorial hairline dividers */
+.editorial-line {
+  height: 1px;
+  background-color: #DDD9D0;
+}
+
+/* Custom discreet scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD9D0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D97732;
+}
